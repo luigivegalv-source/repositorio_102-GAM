@@ -1,0 +1,19 @@
+saldo = 1000
+print("--- BIENVENIDO AL CAJERO ---")
+
+while True:
+    print(f"\nTu saldo actual es: ${saldo}")
+    opcion = input("1. Retirar | 2. Depositar | 3. Salir\nSelecciona: ")
+    
+    if opcion == "1":
+        monto = int(input("¿Cuánto deseas retirar?: "))
+        if monto <= saldo:
+            saldo -= monto
+        else:
+            print("Saldo insuficiente.")
+    elif opcion == "2":
+        monto = int(input("¿Cuánto deseas depositar?: "))
+        saldo += monto
+    elif opcion == "3":
+        print("¡Gracias por usar el sistema!")
+        break
