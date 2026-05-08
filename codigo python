@@ -8,7 +8,8 @@ while True:
     if opcion == "1":
         monto = int(input("¿Cuánto deseas retirar?: "))
         if monto <= saldo:
-            saldo -= monto
+            saldo -= monoto
+#hola, buenas tardes. 
         else:
             print("Saldo insuficiente.")
     elif opcion == "2":
